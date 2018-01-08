@@ -1,5 +1,6 @@
 import React from 'react';
 import Film from './Film';
+import watchlistImg from '../watchlist.png';
 
 class FilmList extends React.Component {
   render() {
@@ -11,7 +12,10 @@ class FilmList extends React.Component {
 
     return (
       <div className="film-list">
+        <div className="watchlistImg">
+        <img src={watchlistImg} width="25" height="25" />
         {filmNodes}
+        </div>
       </div>
     )
   }
