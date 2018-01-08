@@ -23,6 +23,8 @@ class FilmReleasesBox extends React.Component {
       <div className="film-releases-box">
         <h1>{this.props.title}</h1>
         <h5><FilmList data={this.state.data} /></h5>
+        <h5>See more opening this week >></h5>
+        <h3>Get Showtimes >></h3>
       </div>
     )
   }

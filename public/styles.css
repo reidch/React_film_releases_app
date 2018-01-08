@@ -7,6 +7,14 @@ h1 {
     font-weight: lighter;
 }
 
+h3 {
+    color: white;
+    background-color: dodgerBlue;
+    font-weight: normal;
+    text-align: center;
+}
+
 h5 {
     color: dodgerBlue;
+    font-weight: normal;
 }
