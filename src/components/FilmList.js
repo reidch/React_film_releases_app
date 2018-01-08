@@ -3,15 +3,14 @@ import Film from './Film';
 
 class FilmList extends React.Component {
   render() {
-
-    var filmNodes = this.props.data.map(function(film) {
+    const filmNodes = this.props.data.map(film => {
       return (
-        <Film film_title={film.film_title} key={film.id}>{film.showtimes}</Film>
-      );
-    });
+        <Film film_title={film.film_title} key={film.id} showtimes={film.showtimes} />
+      )
+    })
 
     return (
-      <div className="FilmList">
+      <div className="film-list">
         {filmNodes}
       </div>
     )
