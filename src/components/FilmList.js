@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Film from './Film';
 
 class FilmList extends React.Component {
   render() {
+
+    var filmNodes = this.props.data.map(function(film) {
+      return (
+        <Film film_title={film.film_title} key={film.id}>{film.showtimes}</Film>
+      );
+    });
+
     return (
-      <div className="film-list">
-        Here is a film list which starts off empty.
+      <div className="FilmList">
+        {filmNodes}
       </div>
     )
   }
