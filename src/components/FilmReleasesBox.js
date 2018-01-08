@@ -22,7 +22,7 @@ class FilmReleasesBox extends React.Component {
     return (
       <div className="film-releases-box">
         <h1>{this.props.title}</h1>
-        <FilmList data={this.state.data} />
+        <h5><FilmList data={this.state.data} /></h5>
       </div>
     )
   }
